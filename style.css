@@ -75,7 +75,7 @@ body{
 .attribution a{
     color: rgb(106, 45, 124);
 }
-@media(min-width:500px) and (max-width:1023px){
+@media(min-width: 400px) and (max-width:499px){
     .container{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -92,49 +92,6 @@ body{
     .img{
         grid-column: 1;
         max-width: 200px;
-        margin-right: 0;
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 0px;
-        border-top-left-radius: 10px;
-        filter: opacity(0.7) drop-shadow(0 0 0 rgb(255, 3, 255)); 
-    }
-
-    .body ul{
-        margin: 0 auto;
-        font-size: 20px;
-        display: block;
-        text-align: center;
-        list-style: none;
-    }
-
-    .body h1{
-        display: block;
-        text-align: center;
-    }
-
-    .body p{
-        display: block;
-        text-align: center;
-    }
-
-}
-@media(min-width: 320px) and (max-width:499px){
-    .container{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 10px;
-        max-width: 60%;
-        margin: 0 auto;
-    }
-    .body{
-        grid-row: 2;
-        color: white;
-        padding: 10px;
-        margin: 0 auto;
-    }
-    .img{
-        grid-column: 1;
-        max-width: 60%;
         margin-right: 0;
         border-top-right-radius: 10px;
         border-bottom-right-radius: 0px;
@@ -158,6 +115,53 @@ body{
     }
 
     .body p{
+        display: block;
+        text-align: center;
+    }
+
+}
+
+@media(min-width: 320px) and (max-width:399px){
+    .container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
+        max-width: 155px;
+        margin: 0 auto;
+    }
+    .body{
+        grid-row: 2;
+        color: white;
+        padding: 10px;
+        margin: 0 auto;
+    }
+    .img{
+        grid-column: 1;
+        max-width: 155px;
+        margin-right: 0;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 0px;
+        border-top-left-radius: 10px;
+        filter: opacity(0.7) drop-shadow(0 0 0 rgb(255, 3, 255)); 
+    }
+
+    .body ul{
+        margin: 0 auto;
+        font-size: 10px;
+        display: block;
+        text-align: center;
+        list-style: none;
+    }
+
+    .body h1{
+        font-size: 15px;
+        padding-bottom: 10px;
+        display: block;
+        text-align: center;
+    }
+
+    .body p{
+        font-size: 10px;
         display: block;
         text-align: center;
     }
